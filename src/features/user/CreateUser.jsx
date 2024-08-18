@@ -15,7 +15,7 @@ function CreateUser() {
     if (!username) return;
 
     dispatch(updateName(username));
-    navigate("/menu");
+    navigate("/react-router-pizza/menu");
   }
 
   return (
@@ -34,7 +34,7 @@ function CreateUser() {
 
       {username !== "" && (
         <div>
-          <Button type="primary">Start ordering</Button>
+          <Button type="primary" to="/react-router-pizza/menu">Start ordering</Button>
         </div>
       )}
     </form>

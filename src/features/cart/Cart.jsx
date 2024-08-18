@@ -14,7 +14,7 @@ function Cart() {
 
   return (
     <div className="px-4 py-3">
-      <LinkButton to="/menu">&larr; Back to menu</LinkButton>
+      <LinkButton to="/react-router-pizza/menu">&larr; Back to menu</LinkButton>
 
       <h2 className="mt-7 text-xl font-semibold">Your cart, {username}</h2>
       <ul className="mt-3 divide-y divide-stone-200 border-b">
@@ -24,7 +24,7 @@ function Cart() {
       </ul>
 
       <div className="mt-6 space-x-2">
-        <Button type="primary" to="/order/new">
+        <Button type="primary" to="/react-router-pizza/order/new">
           Order pizzas
         </Button>
         <Button type="secondary" onClick={() => dispatch(clearCart())}>

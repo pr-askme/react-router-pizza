@@ -16,7 +16,7 @@ function Home() {
       {username === "" ? (
         <CreateUser />
       ) : (
-        <Button type="primary" to="/menu">
+        <Button type="primary" to="/react-router-pizza/menu">
           Continue ordering, {username}
         </Button>
       )}
