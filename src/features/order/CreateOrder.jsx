@@ -152,7 +152,7 @@ export async function action({ request }) {
   if (Object.keys(errors).length > 0) return errors;
   const newOrder = await createOrder(order);
   store.dispatch(clearCart());
-  return redirect(`/order/${newOrder.id}`);
+  return redirect(`/react-router-pizza/order/${newOrder.id}`);
 }
 
 export default CreateOrder;
